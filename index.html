@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ved Shrimali - Java Developer & Backend Engineer</title>
+    <meta name="description" content="Passionate Java Developer specializing in Spring Boot, Microservices, and Backend Engineering. Expert in building scalable enterprise applications with modern Java technologies.">
+    <meta name="author" content="Ved Shrimali">
+    <meta name="keywords" content="Java Developer, Spring Boot, Backend Engineer, Microservices, REST API, Docker, Hibernate, JWT, OAuth2">
+    
+    <meta property="og:title" content="Ved Shrimali - Java Developer & Backend Engineer">
+    <meta property="og:description" content="Passionate Java Developer specializing in Spring Boot, Microservices, and Backend Engineering from PDEU Gandhinagar.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ved Shrimali - Java Developer">
+    <meta name="twitter:description" content="Building scalable backend systems with Java & Spring Boot">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <button class="logo" onclick="scrollToSection('home')">
+                    Ved<span class="accent">.</span>Dev
+                </button>
+                
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#education" class="nav-link" data-section="education">Education</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#cv" class="nav-link" data-section="cv">CV</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                    <button class="btn-primary" onclick="scrollToSection('contact')">Let's Talk</button>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon">✕</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+            <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+            <a href="#education" class="mobile-nav-link" data-section="education">Education</a>
+            <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+            <a href="#cv" class="mobile-nav-link" data-section="cv">CV</a>
+            <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+            <a href="#achievements" class="mobile-nav-link" data-section="achievements">Achievements</a>
+            <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            <button class="btn-primary full-width" onclick="scrollToSection('contact')">Let's Talk</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    Hi, I'm <span class="gradient-text typing-text"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-title">Java Backend Developer & Spring Boot Specialist</p>
+                <p class="hero-description">
+                    Building robust, scalable microservices and RESTful APIs with Spring Boot, JPA, and modern Java technologies. 
+                    Passionate about clean code, system design, and solving complex backend challenges.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#cv" class="btn-primary">View Resume</a>
+                    <a href="#projects" class="btn-secondary">Explore Projects</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/vedshrimali" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/ved-shrimali" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:ved@example.com" class="social-icon" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line">$ java -version</p>
+                        <p class="terminal-line success">✓ Java 17 LTS</p>
+                        <p class="terminal-line">$ spring-boot:run</p>
+                        <p class="terminal-line success">✓ Application started successfully</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="matrix-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <img src="profile-photo.jpg" alt="Ved Shrimali" class="profile-image">
+                </div>
+                
+                <div class="about-text animate-on-scroll">
+                    <p class="about-paragraph">
+                        Hello! I'm Ved Shrimali, a passionate Java Backend Developer specializing in Spring Boot and microservices architecture. 
+                        Currently pursuing B.Tech in Computer Science & Engineering at Pandit Deendayal Energy University (PDEU), Gandhinagar.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        My journey into backend development started with a fascination for how systems work at scale. I love building robust, 
+                        efficient APIs and working with distributed systems. My expertise lies in Java, Spring Boot, JPA/Hibernate, and creating 
+                        RESTful services that power modern applications.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        I'm particularly interested in microservices architecture, system design, and integrating AI capabilities into backend systems. 
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring fellow developers.
+                    </p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎓</div>
+                            <div class="timeline-content">
+                                <h4>2023</h4>
+                                <p>Enrolled in Computer Engineering at PDEU</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">👥</div>
+                            <div class="timeline-content">
+                                <h4>2023</h4>
+                                <p>Joined Encode PDEU Sub-Committee</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">💻</div>
+                            <div class="timeline-content">
+                                <h4>2024</h4>
+                                <p>Core Committee Member at GFG PDEU</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🚀</div>
+                            <div class="timeline-content">
+                                <h4>2024</h4>
+                                <p>Started specializing in Spring Boot & Microservices</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🏆</div>
+                            <div class="timeline-content">
+                                <h4>2025</h4>
+                                <p>Built multiple production-ready projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary" onclick="window.open('#cv', '_self')">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">My academic journey and qualifications</p>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card animate-on-scroll">
+                    <div class="education-image">
+                        <img src="college1.png" alt="PDEU College">
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">B.Tech in Computer Science & Engineering</h3>
+                        <p class="education-institution">Pandit Deendayal Energy University (PDEU)</p>
+                        <p class="education-year">2023 - 2027</p>
+                        <p class="education-description">
+                            Specializing in Backend Development, Data Structures & Algorithms, and Software Engineering. 
+                            Active member of GFG PDEU and Encode PDEU technical communities.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="education-card animate-on-scroll">
+                    <div class="education-image">
+                        <img src="school.jpeg" alt="Sahajanand School">
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">12th Science (PCM)</h3>
+                        <p class="education-institution">Shree Sahajanand School of Achiever</p>
+                        <p class="education-year">Ahmedabad</p>
+                        <p class="education-description">
+                            Completed higher secondary education with Physics, Chemistry, and Mathematics. 
+                            Built a strong foundation in logical thinking and problem-solving.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="matrix-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll" data-color="#f59e0b">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Backend Development</h3>
+                        <span class="skill-level">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="95"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Spring MVC</span>
+                        <span class="skill-tag">JPA</span>
+                        <span class="skill-tag">Hibernate</span>
+                        <span class="skill-tag">J2EE</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card animate-on-scroll" data-color="#3b82f6">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Database & ORM</h3>
+                        <span class="skill-level">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="90"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">JPA</span>
+                        <span class="skill-tag">Hibernate</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card animate-on-scroll" data-color="#10b981">
+                    <div class="skill-header">
+                        <h3 class="skill-title">DevOps & Tools</h3>
+                        <span class="skill-level">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="85"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Gradle</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card animate-on-scroll" data-color="#8b5cf6">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Web Technologies</h3>
+                        <span class="skill-level">88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="88"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Thymeleaf</span>
+                        <span class="skill-tag">JSP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card animate-on-scroll" data-color="#ec4899">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Microservices</h3>
+                        <span class="skill-level">92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="92"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Cloud</span>
+                        <span class="skill-tag">Eureka</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card animate-on-scroll" data-color="#06b6d4">
+                    <div class="skill-header">
+                        <h3 class="skill-title">Security & Auth</h3>
+                        <span class="skill-level">87%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="87"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">SSL/TLS</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-snippet animate-on-scroll">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">MySkills.java</span>
+                </div>
+                <pre><code>@RestController
+@RequestMapping("/api/v1/skills")
+public class SkillsController {
+    
+    @GetMapping("/backend")
+    public ResponseEntity&lt;List&lt;String&gt;&gt; getBackendSkills() {
+        return ResponseEntity.ok(Arrays.asList(
+            "Java", "Spring Boot", "Microservices", 
+            "JPA", "REST API", "Docker"
+        ));
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Complete professional profile</p>
+            </div>
+            
+            <div class="cv-grid">
+                <!-- Work Experience -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">💼</div>
+                    <h3 class="cv-title">Work Experience</h3>
+                    <div class="cv-content">
+                        <div class="cv-item">
+                            <h4>Core Committee Member</h4>
+                            <p class="cv-org">GeeksforGeeks PDEU</p>
+                            <p class="cv-desc">Leading technical workshops and mentoring students in DSA and development.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>Sub-Committee Member</h4>
+                            <p class="cv-org">Encode PDEU</p>
+                            <p class="cv-desc">Organizing coding events and contributing to technical community growth.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Job Profile -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">👨‍💻</div>
+                    <h3 class="cv-title">Job Profile</h3>
+                    <div class="cv-content">
+                        <h4>Java Backend Developer</h4>
+                        <ul class="cv-list">
+                            <li>Spring Boot & Spring MVC Development</li>
+                            <li>RESTful API Design & Implementation</li>
+                            <li>Microservices Architecture</li>
+                            <li>JPA/Hibernate for Data Persistence</li>
+                            <li>Database Design & Optimization</li>
+                            <li>JWT & OAuth2 Authentication</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Areas of Interest -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">🎯</div>
+                    <h3 class="cv-title">Areas of Interest</h3>
+                    <div class="cv-content">
+                        <ul class="cv-list">
+                            <li>Backend Architecture & Design Patterns</li>
+                            <li>Distributed Systems</li>
+                            <li>Microservices & API Development</li>
+                            <li>AI-Integrated Backend Systems</li>
+                            <li>Performance Optimization</li>
+                            <li>Cloud Computing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Technical Skills -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">⚙️</div>
+                    <h3 class="cv-title">Technical Skills</h3>
+                    <div class="cv-content">
+                        <div class="skill-category">
+                            <strong>Languages:</strong>
+                            <p>Java, SQL, HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Frameworks:</strong>
+                            <p>Spring Boot, Spring MVC, JPA, Hibernate, J2EE</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Tools:</strong>
+                            <p>Docker, Redis, Kafka, Maven, Git, Postman</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Databases:</strong>
+                            <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">🤝</div>
+                    <h3 class="cv-title">Soft Skills</h3>
+                    <div class="cv-content">
+                        <ul class="cv-list">
+                            <li>Effective Communication</li>
+                            <li>Team Leadership</li>
+                            <li>Collaborative Teamwork</li>
+                            <li>Problem Solving & Critical Thinking</li>
+                            <li>Time Management</li>
+                            <li>Typing Speed: 100+ WPM</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Certifications -->
+                <div class="cv-card animate-on-scroll full-width">
+                    <div class="cv-icon">📜</div>
+                    <h3 class="cv-title">Certifications</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate-card">
+                            <img src="apnacollege.jpeg" alt="Apna College DSA Certificate">
+                            <div class="certificate-info">
+                                <h4>Data Structures & Algorithms</h4>
+                                <p>Apna College</p>
+                                <a href="apnacerti.png" target="_blank" class="btn-link">View Certificate</a>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <img src="spark.jpg" alt="Code For Success Java Certificate">
+                            <div class="certificate-info">
+                                <h4>Java Developer</h4>
+                                <p>Code For Success</p>
+                                <a href="javacerti.png" target="_blank" class="btn-link">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Awards & Honors -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">🏆</div>
+                    <h3 class="cv-title">Awards & Honors</h3>
+                    <div class="cv-content">
+                        <div class="cv-item">
+                            <h4>Recognition for Backend Excellence</h4>
+                            <p class="cv-desc">
+                                Recognized by mentor Ashwini Upadhyay for demonstrating strong backend development skills 
+                                and dedication to learning advanced Java technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Volunteer Work -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">🌟</div>
+                    <h3 class="cv-title">Volunteer & Co-Curricular</h3>
+                    <div class="cv-content">
+                        <ul class="cv-list">
+                            <li>Active member of Encode PDEU technical community</li>
+                            <li>Core Committee at GeeksforGeeks PDEU</li>
+                            <li>Helping peers with coding concepts and debugging</li>
+                            <li>Conducting workshops on backend development</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Hobbies -->
+                <div class="cv-card animate-on-scroll">
+                    <div class="cv-icon">🎮</div>
+                    <h3 class="cv-title">Hobbies & Interests</h3>
+                    <div class="cv-content">
+                        <ul class="cv-list">
+                            <li>Building backend systems & microservices</li>
+                            <li>Solving Data Structures & Algorithms problems</li>
+                            <li>Exploring AI & Machine Learning integration</li>
+                            <li>Contributing to open-source projects</li>
+                            <li>Reading tech blogs & documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="bookmyshow.webp" alt="BookMyShow Backend">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Ved1001/jdbc-project-1-simple-backend-for-Booking-application" target="_blank" class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-status completed">Completed</div>
+                        <h3 class="project-title">BookMyShow Backend Clone</h3>
+                        <p class="project-subtitle">Ticket Booking System</p>
+                        <p class="project-description">
+                            Complete backend system for movie ticket booking with user authentication, seat selection, 
+                            payment processing, and booking management using Spring Boot and MySQL.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">JPA</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="resumea.png" alt="AI ATS Analyzer">
+                        <div class="project-overlay">
+                            <a href="https://github.com/vedshrimali" target="_blank" class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-status in-development">In Development</div>
+                        <h3 class="project-title">AI-Powered ATS Resume Analyzer</h3>
+                        <p class="project-subtitle">Resume Optimization Tool</p>
+                        <p class="project-description">
+                            Intelligent system that analyzes resumes against job descriptions, providing ATS compatibility scores 
+                            and improvement suggestions using AI and NLP techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="jdrive.jpeg" alt="Google Drive Clone">
+                        <div class="project-overlay">
+                            <a href="https://github.com/vedshrimali" target="_blank" class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-status in-development">In Development</div>
+                        <h3 class="project-title">Google Drive Clone</h3>
+                        <p class="project-subtitle">Cloud Storage Application</p>
+                        <p class="project-description">
+                            Full-featured cloud storage solution with file upload/download, folder management, sharing capabilities, 
+                            and real-time synchronization using Spring Boot and AWS S3.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">AWS S3</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="travel.png" alt="Travel Booking Website">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Ved1001/webtech_project1" target="_blank" class="btn-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-status completed">Completed</div>
+                        <h3 class="project-title">Travel Booking Platform</h3>
+                        <p class="project-subtitle">End-to-End Travel Solution</p>
+                        <p class="project-description">
+                            Comprehensive travel booking system with hotel reservations, flight bookings, package deals, 
+                            and integrated payment gateway. Built with microservices architecture.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Spring Cloud</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="matrix-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Achievements & Stats</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Milestones and accomplishments</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-value counter" data-target="15">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                    <p class="stat-desc">Full-stack and backend projects built from scratch</p>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-value counter" class="counter" data-target="256">0</div>
+                    <div class="stat-label">DSA Problems Solved</div>
+                    <p class="stat-desc">LeetCode, Codeforces, and competitive programming</p>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value counter" data-target="25">0</span>+</div>
+                    <div class="stat-label">GitHub Contributions</div>
+                    <p class="stat-desc">Open source contributions and personal projects</p>
+                </div>
+                
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value"><span class="counter" data-target="100">0</span>+</div>
+                    <div class="stat-label">WPM Typing Speed</div>
+                    <p class="stat-desc">Fast and accurate code typing speed</p>
+                </div>
+            </div>
+            
+            <div class="highlights animate-on-scroll">
+                <h3 class="highlights-title">Additional Highlights</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📜</div>
+                        <h4>Certifications</h4>
+                        <ul>
+                            <li>Data Structures & Algorithms - Apna College</li>
+                            <li>Java Developer Certification - Code For Success</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">👥</div>
+                        <h4>Leadership Roles</h4>
+                        <ul>
+                            <li>Core Committee Member - GFG PDEU</li>
+                            <li>Sub-Committee Member - Encode PDEU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="section testimonial-section">
+        <div class="container">
+            <div class="testimonial-card animate-on-scroll">
+                <div class="quote-icon">❝</div>
+                <p class="testimonial-text">
+                    Ved is an exceptionally dedicated learner with a strong grasp of backend development concepts. 
+                    His proficiency in Java and Spring Boot, combined with his problem-solving abilities, 
+                    makes him a valuable asset to any development team.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Ashwini Upadhyay</h4>
+                        <p>Senior Backend Engineer & Mentor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics Section -->
+    <section id="ethics" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Code with Ethics</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    "With great code comes great responsibility" - My commitment to ethical development
+                </p>
+            </div>
+            
+            <div class="ethics-grid">
+                <div class="ethics-card animate-on-scroll">
+                    <div class="ethics-icon">🔒</div>
+                    <h3>Security First</h3>
+                    <p>
+                        Always implementing industry-standard security practices, secure authentication, 
+                        data encryption, and following OWASP guidelines in every project.
+                    </p>
+                </div>
+                
+                <div class="ethics-card animate-on-scroll">
+                    <div class="ethics-icon">🔐</div>
+                    <h3>Privacy Protection</h3>
+                    <p>
+                        Respecting user privacy by implementing proper data handling, GDPR compliance, 
+                        and transparent data collection practices.
+                    </p>
+                </div>
+                
+                <div class="ethics-card animate-on-scroll">
+                    <div class="ethics-icon">♿</div>
+                    <h3>Inclusive Design</h3>
+                    <p>
+                        Building accessible applications that work for everyone, following WCAG guidelines 
+                        and ensuring equal access to technology.
+                    </p>
+                </div>
+                
+                <div class="ethics-card animate-on-scroll">
+                    <div class="ethics-icon">🌱</div>
+                    <h3>Sustainable Code</h3>
+                    <p>
+                        Writing clean, maintainable code with proper documentation, optimizing for performance 
+                        to reduce energy consumption and carbon footprint.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="goals" class="section goals-section">
+        <div class="goals-overlay"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Future Roadmap</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">My journey ahead in tech</p>
+            </div>
+            
+            <div class="goals-timeline">
+                <div class="goal-item animate-on-scroll">
+                    <div class="goal-icon completed">✓</div>
+                    <div class="goal-content">
+                        <h3>Master Spring Boot & Microservices</h3>
+                        <p>Deep dive into Spring ecosystem and microservices architecture</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item animate-on-scroll">
+                    <div class="goal-icon">○</div>
+                    <div class="goal-content">
+                        <h3>Cloud Computing Certification</h3>
+                        <p>Get AWS/Azure certified and master cloud deployment</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item animate-on-scroll">
+                    <div class="goal-icon">○</div>
+                    <div class="goal-content">
+                        <h3>Contribute to Major Open Source Projects</h3>
+                        <p>Make significant contributions to Apache, Spring, or similar projects</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item animate-on-scroll">
+                    <div class="goal-icon">○</div>
+                    <div class="goal-content">
+                        <h3>Build a SaaS Product</h3>
+                        <p>Launch a production-ready SaaS application with scalable architecture</p>
+                    </div>
+                </div>
+                
+                <div class="goal-item animate-on-scroll">
+                    <div class="goal-icon">○</div>
+                    <div class="goal-content">
+                        <h3>Backend Engineering Leadership Role</h3>
+                        <p>Lead a team of backend developers in a product company</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="goals-quote animate-on-scroll">
+                <p>"The journey of a thousand lines of code begins with a single keystroke."</p>
+                <span>- Ved Shrimali</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">
+                    Have a project in mind or want to discuss backend development? Feel free to reach out!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:ved@example.com">ved@example.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/ved-shrimali" target="_blank">linkedin.com/in/ved-shrimali</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/vedshrimali" target="_blank">github.com/vedshrimali</a>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <span>© 2025 Ved Shrimali</span>
+                    <span>•</span>
+                    <span class="footer-love">
+                        Designed & Coded with 
+                        <span class="heart">❤️</span>
+                        in Java & Spring
+                    </span>
+                </div>
+                
+                <div class="footer-tech">
+                    <span class="code-icon">⚡</span>
+                    <span>
+                        Built with <strong>HTML</strong>, <strong>CSS</strong> & <strong>JavaScript</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
